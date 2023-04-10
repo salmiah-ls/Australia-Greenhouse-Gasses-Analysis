@@ -1,4 +1,4 @@
-# Australia-Greenhouse-Gasses-Analysis
+# Australia Greenhouse Gasses Analysis
 This repository contains analysis of Greenhouse Gasses emission of Australia.
 
 ## Background
@@ -7,3 +7,8 @@ Link: <a href="https://www.aofm.gov.au/sites/default/files/2022-11-28/Aust%20Gov
 
 ## Dataset
 For this project, I use dataset of Greenhouse Gas Emissions from Organisation for Economic Co-operation and Development (OECD). Link to <a href="https://stats.oecd.org/Index.aspx?DataSetCode=air_ghg">dataset</a>.
+
+## Tools
+1. **Microsoft Excel** to load and transfor data.
+2. **Microsoft Power BI** to create visualization and report.
+3. **R** to create model dan predict value.
