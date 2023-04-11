@@ -10,5 +10,15 @@ For this project, I use dataset of Greenhouse Gas Emissions from Organisation fo
 
 ## Tools
 1. **Microsoft Excel** to load and transfor data.
-2. **Microsoft Power BI** to create visualization and report.
+2. **Microsoft Power BI** to create visualization.
 3. **R** to create model dan predict value.
+
+## Analysis
+After analyzing data Australia GHG data, below are charts showing total emissions, LULUCF (Land Use, Land-Use Change and Forestry), and pollutants, from 1990 to 2020
+<br /><br />
+<img src="https://github.com/salmiah-ls/Australia-Greenhouse-Gasses-Analysis/blob/main/images/Australia_emissions.png" width="800"></img><br /><br />
+<img src="https://github.com/salmiah-ls/Australia-Greenhouse-Gasses-Analysis/blob/main/images/Australia_lulucf.png" width="800"></img><br /><br />
+<img src="https://github.com/salmiah-ls/Australia-Greenhouse-Gasses-Analysis/blob/main/images/Australia_pollutants.png" width="800"></img><br /><br />
+
+## Prediction
+Based on analysis above, I will build linear regression model to predict the maximum amount of CO2 the country has to keep each year in order to achive the target emission in 2030.
