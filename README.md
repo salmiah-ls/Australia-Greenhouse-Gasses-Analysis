@@ -24,5 +24,8 @@ After analyzing data Australia GHG data, below are charts showing total emission
 Based on analysis above, I will build linear regression model to predict the maximum amount of CO2 the country has to keep each year in order to achive the target emission in 2030.<br />
 - First, calculating the target CO2 emission for year 2030. It is 43% below emission in 2005. Hence, the emission value is 57% of 2005 emission (608646.542 thousands tonnes).<br />
 > 2030 CO2 emission = 57% * 608646.542 = 346928.5289 thousands tonnes
-- Second, calculating the difference between 2030 emission and 2020 emission (487591.186 thousands tonnes).
-> 487591.186 - 346928.5289 = 140662.6571 thousands tonnes
+- Calculating the difference between 2030 emission and 2020 emission (487591.186 thousands tonnes).
+> 487591.186 - 346928.5289 = 140662.66 thousands tonnes
+- From 2020 to 2030, there are 10 years interval i.e. 2021, 2022, ... 2030. Hence I divide the difference value above with 10.
+> 140662.66 / 10 = 14066.266
+- For LULUCF value, I assume the value is constant and same with 2020 value.
