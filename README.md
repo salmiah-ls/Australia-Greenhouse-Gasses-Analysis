@@ -21,4 +21,6 @@ After analyzing data Australia GHG data, below are charts showing total emission
 <img src="https://github.com/salmiah-ls/Australia-Greenhouse-Gasses-Analysis/blob/main/images/Australia_pollutants.png" width="800"></img><br /><br />
 
 ## Prediction
-Based on analysis above, I will build linear regression model to predict the maximum amount of CO2 the country has to keep each year in order to achive the target emission in 2030.
+Based on analysis above, I will build linear regression model to predict the maximum amount of CO2 the country has to keep each year in order to achive the target emission in 2030.<br />
+- First, calculating the target CO2 emission for year 2030. It is 43% below emission in 2005. Hence, the emission value is 57% of 2005 emission (608646.542 thousands tonnes).<br />
+> 2030 CO2 emission = 57% * 608646.542 = 346928.5289 thousands tonnes
