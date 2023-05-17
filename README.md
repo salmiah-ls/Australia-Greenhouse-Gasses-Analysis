@@ -56,3 +56,6 @@ Next step, enter the values of GHG emission (without LULUCF) from table above, I
 
 Predict the values of CO2, ` xpred ` variable, based on the GHG emission values above: <br />
 ` xpred <- t(sapply(ynew, function(y) inverse.predict(emission_co2_model, y)[1:3])) `
+
+Here are the predicted CO2 values with 95% confidence interval for the next 10 years (2021 to 2030):<br />
+![CO2 predicted values](images/co2_prediction_ci95.png)
