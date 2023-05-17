@@ -18,7 +18,7 @@ After analyzing data Australia GHG data, below are charts showing total emission
 <br /><br />
 <img src="https://github.com/salmiah-ls/Australia-Greenhouse-Gasses-Analysis/blob/main/images/Australia_emissions_2.png" width="800"></img><br /><br />
 <img src="https://github.com/salmiah-ls/Australia-Greenhouse-Gasses-Analysis/blob/main/images/Australia_lulucf_2.png" width="800"></img><br /><br />
-<img src="https://github.com/salmiah-ls/Australia-Greenhouse-Gasses-Analysis/blob/main/images/Australia_pollutants.png" width="800"></img><br /><br />
+<img src="https://github.com/salmiah-ls/Australia-Greenhouse-Gasses-Analysis/blob/main/images/Australia_pollutants_2.png" width="800"></img><br /><br />
 Based on analysis above, I will build **linear regression model** to predict the maximum amount of CO2 emission the country has to keep each year in order to achive the target GHG emission in 2030. As we know from the report, there are 6 gasses that contribute to total GHG emission, plus LULUCF factor. Among the 6 gasses, the main contributor is CO2.<br />
 
 ## GHG Emission
