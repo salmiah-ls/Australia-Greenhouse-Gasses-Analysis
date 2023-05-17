@@ -49,7 +49,7 @@ Calculate the correlation value between CO2 and GHG:<br />
 ` cor(emission_value, co2_value) ` <br />
 > 0.9974014
 
-Build the linear regression model:
+Build the linear regression model:<br />
 ` emission_co2_model <- lm(emission_value ~ co2_value) ` <br />
 ` summary(emission_co2_model) `<br /><br />
 ![CO2 and GHG correlation](images/co2_ghg_cor.png) <br />
