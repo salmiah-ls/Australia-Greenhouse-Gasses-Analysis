@@ -19,12 +19,12 @@ After analyzing data Australia GHG data, below are charts showing total emission
 <img src="https://github.com/salmiah-ls/Australia-Greenhouse-Gasses-Analysis/blob/main/images/Australia_emissions.png" width="800"></img><br /><br />
 <img src="https://github.com/salmiah-ls/Australia-Greenhouse-Gasses-Analysis/blob/main/images/Australia_lulucf.png" width="800"></img><br /><br />
 <img src="https://github.com/salmiah-ls/Australia-Greenhouse-Gasses-Analysis/blob/main/images/Australia_pollutants.png" width="800"></img><br /><br />
-Based on analysis above, I will build **linear regression model** to predict the maximum amount of CO2 the country has to keep each year in order to achive the target GHG emission in 2030.<br />
+Based on analysis above, I will build **linear regression model** to predict the maximum amount of CO2 emission the country has to keep each year in order to achive the target GHG emission in 2030. As we know from the report, there are 6 gasses that contribute to total GHG emission, plus LULUCF factor. Among the 6 gasses, the main contributor is CO2.<br />
 
 ## GHG Emission
 - First, calculate the target GHG emission for year 2030. It is 43% below emission in 2005. Hence, the emission value is 57% of 2005 emission (608646.542 thousands tonnes).<br />
   ` 2030 GHG emission = 57% * 608646.542 = 346928.5289 thousands tonnes `
-- Calculate the difference between 2030 emission and 2020 emission (487591.186 thousands tonnes).
+- Calculate the difference between 2030 emission and 2020 emission (487591.186 thousands tonnes).<br />
   ` 487591.186 - 346928.5289 = 140662.66 thousands tonnes `
 - From 2020 to 2030, there are 10 years interval i.e. 2021, 2022, ... 2030. So, I divide the difference value above with 10.
   ` 140662.66 / 10 = 14066.266 `
@@ -50,3 +50,9 @@ Then, calculate the correlation value between CO2 and GHG:<br />
 ` summary(emission_co2_model) `<br /><br />
 ![CO2 and GHG correlation](images/co2_ghg_cor.png) <br />
 From summary above, we can see that CO2 and GHG emission have strong positive correlation. The value is ` 9.356e-01 ` or ` 0.9356 `, and almost ` +1 `.
+
+Next step, enter the values of GHG emission (without LULUCF) from table above, I assign them as ` ynew ` variable:<br />
+` ynew <- c(513670.8, 499604.5, 485538.2, 471472, 457405.7, 443339.5, 429273.2, 415206.9, 401140.7, 387074.4) `
+
+Predict the values of CO2, ` xpred ` variable, based on the GHG emission values above: <br />
+` xpred <- t(sapply(ynew, function(y) inverse.predict(emission_co2_model, y)[1:3])) `
