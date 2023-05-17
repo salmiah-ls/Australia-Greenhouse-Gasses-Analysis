@@ -30,7 +30,7 @@ Based on analysis above, I will build **linear regression model** to predict the
   ` 140662.66 / 10 = 14066.266 `
 - For LULUCF value, I use constant value and it is same with the 2020 LULUCF value, ` -40145.861 thousands tonnes `, assuming that Australia Government is consistent to keep the forest area and green space in the country.
 - Calculate the GHG emission excluding LULUCF, by substracting the GHG emission including LULUCF above with LULUCF value. Here are the complete values of GHG emission based on calculation above:
-![GHG emission values](images/ghg_prediction.png)
+![GHG emission values](images/ghg_prediction_2.png)
 
 ## Predicting CO2 Emission with R
 After retrieving the values of GHG emission for 2021 to 2030, next step is building the linear regeression model with R to predict the CO2 emission for each of the years. This values are useful for all sectors to measure their CO2 emission limit in order to achieve the country's GHG emission target in 2030.
