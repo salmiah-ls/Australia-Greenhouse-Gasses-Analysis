@@ -30,7 +30,7 @@ Based on analysis above, I will build **linear regression model** to predict the
   ` 140662.66 / 10 = 14066.266 `
 - For LULUCF value, I use constant value and it is same with the 2020 LULUCF value, ` -40145.861 thousands tonnes `, assuming that Australia Government is consistent to keep the forest area and green space in the country.
 - Calculate the GHG emission excluding LULUCF, by substracting the GHG emission including LULUCF above with LULUCF value. Here are the complete values of GHG emission based on calculation above:
-![ghg prediction](images/ghg_prediction.png)
+![GHG emission values](images/ghg_prediction.png)
 
 ## Predicting CO2 Emission with R
 After retrieving the values of GHG emission for 2021 to 2030, next step is building the linear regeression model with R to predict the CO2 emission for each of the years. This values are useful for all sectors to measure their CO2 emission limit in order to achieve the country's GHG emission target in 2030.
@@ -39,3 +39,14 @@ I use 3 libraries here:
 - ` readxl ` to read Excel files,
 - ` tidyverse ` for general analysis,
 - ` chemCal ` to use ` inverse.predict() ` function, because here I will predict the CO2 values (x) based on GHG values (y).
+
+Plot the CO2 and GHG emission (values in thousands tonnes):<br />
+` ggplot(data = NULL, aes(x = co2_value, y = emission_value)) + geom_point() + geom_smooth(method = 'lm') ` <br /><br />
+![CO2 and GHG linear regression](images/co2_ghg_lm.png) <br />
+Based on plot above, we can seen that CO2 and GHG emission can be modeled with Linear Regression.
+
+Then, calculate the correlation value between CO2 and GHG:<br />
+` emission_co2_model <- lm(emission_value ~ co2_value) ` <br />
+` summary(emission_co2_model) `<br /><br />
+![CO2 and GHG correlation](images/co2_ghg_cor.png) <br />
+From summary above, we can see that CO2 and GHG emission have strong positive correlation. The value is ` 9.356e-01 ` or ` 0.9356 `, and almost ` +1 `.
