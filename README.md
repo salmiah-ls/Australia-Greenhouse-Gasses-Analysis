@@ -62,4 +62,8 @@ Predict the values of CO2, ` xpred ` variable, based on the GHG emission values 
 ` xpred <- t(sapply(ynew, function(y) inverse.predict(emission_co2_model, y)[1:3])) `
 
 Here are the predicted CO2 values with 95% confidence interval for the next 10 years (2021 to 2030):<br />
-![CO2 predicted values](images/co2_prediction_ci95.png)
+![CO2 predicted values and CI values](images/co2_prediction_ci_95.png)
+
+Since we want the maximum limit of CO2, sum the prediction values and the confidence values for each year. Below is the final table:
+![CO2 maximum values for each year](images/co2_prediction_max_values.png)
+
