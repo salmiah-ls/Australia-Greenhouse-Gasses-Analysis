@@ -45,7 +45,11 @@ Plot the CO2 and GHG emission (values in thousands tonnes):<br />
 ![CO2 and GHG linear regression](images/co2_ghg_lm.png) <br />
 Based on plot above, we can seen that CO2 and GHG emission can be modeled with Linear Regression.
 
-Then, calculate the correlation value between CO2 and GHG:<br />
+Calculate the correlation value between CO2 and GHG:<br />
+` cor(emission_value, co2_value) ` <br />
+> 0.9974014
+
+Build the linear regression model:
 ` emission_co2_model <- lm(emission_value ~ co2_value) ` <br />
 ` summary(emission_co2_model) `<br /><br />
 ![CO2 and GHG correlation](images/co2_ghg_cor.png) <br />
