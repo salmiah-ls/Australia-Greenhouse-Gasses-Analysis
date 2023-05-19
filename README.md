@@ -49,11 +49,12 @@ Calculate the correlation value between CO2 and GHG:<br />
 ` cor(emission_value, co2_value) ` <br />
 > 0.9974014
 
+The correlation value shows that CO2 and GHG emission have strong positive correlation. It is ` 0.9974014 ` and almost ` +1 `.
+
 Build the linear regression model:<br />
 ` emission_co2_model <- lm(emission_value ~ co2_value) ` <br />
 ` summary(emission_co2_model) `<br /><br />
 ![CO2 and GHG correlation](images/co2_ghg_cor.png) <br />
-From summary above, we can see that CO2 and GHG emission have strong positive correlation. The value is ` 9.356e-01 ` or ` 0.9356 `, and almost ` +1 `.
 
 Next step, enter the values of GHG emission (without LULUCF) from table above, I assign them as ` ynew ` variable:<br />
 ` ynew <- c(513670.8, 499604.5, 485538.2, 471472, 457405.7, 443339.5, 429273.2, 415206.9, 401140.7, 387074.4) `
