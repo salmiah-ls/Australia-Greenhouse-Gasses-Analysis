@@ -16,9 +16,9 @@ For this project, I use dataset of Greenhouse Gas Emissions from Organisation fo
 ## Analysis
 After analyzing data Australia GHG data, below are charts showing total emissions, LULUCF (Land Use, Land-Use Change and Forestry), and pollutants, from 1990 to 2020
 <br /><br />
-<img src="https://github.com/salmiah-ls/Australia-Greenhouse-Gasses-Analysis/blob/main/images/Australia_emissions_2.png" width="800"></img><br /><br />
-<img src="https://github.com/salmiah-ls/Australia-Greenhouse-Gasses-Analysis/blob/main/images/Australia_lulucf_2.png" width="800"></img><br /><br />
-<img src="https://github.com/salmiah-ls/Australia-Greenhouse-Gasses-Analysis/blob/main/images/Australia_pollutants_2.png" width="800"></img><br /><br />
+<img src="https://github.com/salmiah-ls/Australia-Greenhouse-Gasses-Analysis/blob/main/images/Australia_emissions.png" width="800"></img><br /><br />
+<img src="https://github.com/salmiah-ls/Australia-Greenhouse-Gasses-Analysis/blob/main/images/Australia_lulucf.png" width="800"></img><br /><br />
+<img src="https://github.com/salmiah-ls/Australia-Greenhouse-Gasses-Analysis/blob/main/images/Australia_pollutants.png" width="800"></img><br /><br />
 Based on analysis above, I will build **linear regression model** to predict the maximum amount of CO2 emission the country has to keep each year in order to achive the target GHG emission in 2030. As we know from the report, there are 6 gasses that contribute to total GHG emission, plus LULUCF factor. Among the 6 gasses, the main contributor is CO2.<br />
 
 ## GHG Emission
@@ -68,3 +68,6 @@ Here are the predicted CO2 values (in thousands tonnes) with 95% confidence inte
 Since we want the maximum limit of CO2, sum the prediction values and the confidence values for each year. Here is the final table:<br />
 ![CO2 maximum values for each year](images/co2_prediction_max_values_2.png)
 
+Visualize the prediction values of CO2 with Power BI:<br />
+
+<img src="https://github.com/salmiah-ls/Australia-Greenhouse-Gasses-Analysis/blob/main/images/Australia_co2_prediction.png" width="800"></img><br /><br />
