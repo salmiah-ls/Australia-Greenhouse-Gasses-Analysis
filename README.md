@@ -9,9 +9,9 @@ Link: <a href="https://www.aofm.gov.au/sites/default/files/2022-11-28/Aust%20Gov
 For this project, I use dataset of Greenhouse Gas Emissions from Organisation for Economic Co-operation and Development (OECD). Link to <a href="https://stats.oecd.org/Index.aspx?DataSetCode=air_ghg">dataset</a>.
 
 ## Tools
-1. **Microsoft Excel** to load and transfor data.
+1. **Microsoft Excel** to load and transform data.
 2. **Microsoft Power BI** to create visualization.
-3. **R** to create model dan predict value.
+3. **R** to create model and predict CO2 value.
 
 ## Analysis
 After analyzing data Australia GHG data, below are charts showing total emissions, LULUCF (Land Use, Land-Use Change and Forestry), and pollutants, from 1990 to 2020
