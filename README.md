@@ -70,4 +70,6 @@ Since we want the maximum limit of CO2, sum the prediction values and the confid
 
 Visualize the prediction values of CO2 with Power BI:<br />
 
-<img src="https://github.com/salmiah-ls/Australia-Greenhouse-Gasses-Analysis/blob/main/images/Australia_co2_prediction.png" width="800"></img><br /><br />
+<img src="https://github.com/salmiah-ls/Australia-Greenhouse-Gasses-Analysis/blob/main/images/Australia_co2_prediction.png" width="800"></img><br />
+
+**N.B. I'm a freelance Data Analyst from Indoneia. I offer service in Data Analysis or Data Engineering with very affordable price. Feel free to contact me at sitti.salmiah[at]gmail.com.**
